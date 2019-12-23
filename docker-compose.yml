@@ -1,0 +1,7 @@
+version: "3"
+services:
+  front:
+    build: ./front
+    image: sentency-front:0.1
+    ports: 
+    - "3000:80"
