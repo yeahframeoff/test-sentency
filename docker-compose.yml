@@ -5,3 +5,14 @@ services:
     image: sentency-front:0.1
     ports: 
     - "3000:80"
+    depends_on: 
+      - api
+
+  api:
+    build: ./api
+    image: sentency-api:0.1
+    working_dir: /app
+    volumes: 
+    - ./api:/app
+    ports:
+    - 8080:8080
