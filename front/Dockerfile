@@ -2,7 +2,6 @@ FROM node:8.17.0-alpine3.11
 
 WORKDIR /usr/src/app
 COPY package.json .
-RUN npm install    
-COPY . .
+RUN npm install
 
 CMD ["npm", "start"]
