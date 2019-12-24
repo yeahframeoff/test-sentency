@@ -7,4 +7,5 @@ COPY requirements.txt .
 RUN apk add gcc libc-dev
 RUN pip install -r requirements.txt
 
-CMD ["python", "app.py"]
+ENV AIO_PORT=8080
+CMD ["adev", "runserver", "app.py"]

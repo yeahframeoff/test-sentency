@@ -10,7 +10,7 @@ services:
 
   api:
     build: ./api
-    image: sentency-api:0.1
+    image: sentency-api:0.2
     working_dir: /app
     volumes: 
     - ./api:/app
